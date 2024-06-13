@@ -220,21 +220,20 @@
     width: fit-content;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
-    margin-bottom: 70px;
     position: relative;
-    left: 40px;
+    left: 20vw;
   }
 
   .order__step__icon {
-    min-width: 100px;
-    min-height: 50px;
+    min-width: 90px;
   }
 
   .order__step__name {
     min-width: 120px;
     position: absolute;
     margin-top: 30px;
-    left: 145px;
+    font-size: 16px;
+    left: 30vw;
   }
 
   .dotted__line__cont {
@@ -258,6 +257,30 @@
 
   .order__progress-cont {
     grid-column: 1;
+  }
+
+  .order__submit {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .order__steps {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    margin-bottom: 70px;
+    position: relative;
+    left: 35px;
+  }
+
+  .order__step__name {
+    min-width: 120px;
+    position: absolute;
+    margin-top: 30px;
+    left: 32vw;
   }
 }
 
