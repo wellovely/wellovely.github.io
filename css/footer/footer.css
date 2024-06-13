@@ -41,6 +41,10 @@
   align-items: center;
 }
 
+.footer__info__compant-name {
+  text-transform: uppercase;
+}
+
 .footer__contacts {
   width: 100%;
   font-size: 13px;
