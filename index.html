@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Layout</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header/header.css" />
+    <link rel="stylesheet" href="css/intro/intro.css" />
+    <link rel="stylesheet" href="css/order/order.css" />
+    <link rel="stylesheet" href="css/footer/footer.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">
+          <a href="#" class="header__logo__link"
+            >LOREMIPSUM.<span class="header__logo__accent">NET</span></a
+          >
+        </div>
+        <nav class="header__nav">
+          <a href="#" class="header__link header__link__active">Бизнес</a>
+          <a href="#" class="header__link">О нас</a>
+          <a href="#" class="header__link">Цены</a>
+          <a href="#" class="header__link">Оформить заказ</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <!-- Intro -->
+      <section class="intro">
+        <div class="intro__content container">
+          <h1 class="intro__title">
+            <span class="intro__title__accent">Lorem ipsum</span> dolor sit
+            <br />
+            amet consectetur
+            <span class="intro__title__accent">adipiscing</span>
+          </h1>
+          <div class="intro__text">
+            <h3 class="intro__text__heading">
+              At vero eos et accusamus et iusto odio dignissimos ducimus!
+            </h3>
+            <ul class="intro__text__list">
+              <li class="intro__text__list_element">
+                Totam rem aperiam eaque ipsa
+              </li>
+              <li class="intro__text__list_element">
+                Sit voluptatem accusantium doloremque laudantium
+              </li>
+              <li class="intro__text__list_element">
+                Sed ut perspiciatis, unde omnis iste natus error
+              </li>
+            </ul>
+          </div>
+          <div class="intro__actions">
+            <button class="intro__button intro__button__order">Заказать</button>
+            <button class="intro__button intro__button__details">
+              Подробнее
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Order  -->
+      <section class="order container">
+        <h2 class="order__title">
+          Оформление <span class="order__title__accent">заказа</span>
+        </h2>
+        <p class="order__description">
+          Перед заполнением формы ознакомьтесь с нашей схемой работы!
+        </p>
+        <div class="order__steps">
+          <div class="order__step">
+            <div class="order__step__icon">
+              <img
+                src="media/icons/search.png"
+                alt="search"
+                class="order__step__img"
+              />
+            </div>
+            <div class="order__step__name truncate-overflow">
+              Lorem ipsum dolor sit amet
+            </div>
+          </div>
+          <div class="dotted__line__cont">
+            <div class="order__step__dotted-line"></div>
+          </div>
+
+          <div class="order__step">
+            <div class="order__step__icon">
+              <img
+                src="media/icons/percent.png"
+                alt="percent"
+                class="order__step__img"
+              />
+            </div>
+            <div class="order__step__name truncate-overflow">
+              Сonsecteturadipiscing elit
+            </div>
+          </div>
+          <div class="dotted__line__cont">
+            <div class="order__step__dotted-line"></div>
+          </div>
+          <div class="order__step">
+            <div class="order__step__icon">
+              <img
+                src="media/icons/application.png"
+                alt="application"
+                class="order__step__img"
+              />
+            </div>
+            <div class="order__step__name truncate-overflow">
+              Sed do eiusmod tempor
+            </div>
+          </div>
+          <div class="dotted__line__cont">
+            <div class="order__step__dotted-line"></div>
+          </div>
+          <div class="order__step">
+            <div class="order__step__icon">
+              <img
+                src="media/icons/email.png"
+                alt="email"
+                class="order__step__img"
+              />
+            </div>
+            <div class="order__step__name truncate-overflow">
+              Esse cillum dolore eu fugiat
+            </div>
+          </div>
+          <div class="dotted__line__cont">
+            <div class="order__step__dotted-line"></div>
+          </div>
+          <div class="order__step">
+            <div class="order__step__icon">
+              <img
+                src="media/icons/cash.png"
+                alt="cash"
+                class="order__step__img"
+              />
+            </div>
+            <div class="order__step__name truncate-overflow">
+              Esse cillum dolore eu fugiat
+            </div>
+          </div>
+        </div>
+        <form class="form">
+          <div class="order__form">
+            <select class="order__select" name="system-type" required>
+              <option value="">Выберите тип системы</option>
+              <option value="">macos</option>
+              <option value="">windows</option>
+              <option value="">linux</option>
+            </select>
+            <input
+              class="order__input"
+              type="email"
+              name="email"
+              placeholder="Ваш e-mail"
+              required
+            />
+            <input
+              class="order__input"
+              type="text"
+              name="name"
+              placeholder="Ваше имя"
+              required
+            />
+            <div class="order__progress-cont">
+              <p class="order__progress-description">
+                Sed ut perspiciatis, unde omnis iste natus
+              </p>
+              <span class="order__progress-text">75%</span>
+              <div class="order__progress">
+                <div class="order__progress-bar">
+                  <div class="order__progress-fill" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+            <input
+              type="file"
+              name="file"
+              class="order__input"
+              placeholder="Прикрепить файл"
+            />
+          </div>
+          <button class="order__submit" type="submit">Отправить</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__info footer__area-cont">
+          <p>© 2018 "LOREMIPSUM.NET" Все права защищены.</p>
+          <div class="footer__vertical-line"></div>
+        </div>
+        <div class="footer__payment-systems footer__area-cont">
+          <div class="payment-systems-list">
+            <div class="payment-systems__system">
+              <div class="payment-system-icon">
+                <img
+                  src="media/icons/qiwi.png"
+                  alt="qiwi"
+                  class="payment-icon-photo"
+                />
+              </div>
+              <div class="payment-system-name">QIWI wallet</div>
+            </div>
+            <div class="payment-systems__system">
+              <div class="payment-system-icon">
+                <img
+                  src="media/icons/yandex-money.png"
+                  alt="Yandex Money"
+                  class="payment-icon-photo"
+                />
+              </div>
+              <div class="payment-system-name">Yandex Money</div>
+            </div>
+            <div class="payment-systems__system">
+              <div class="payment-system-icon">
+                <img
+                  src="media/icons/web-money.png"
+                  alt="Web Money"
+                  class="payment-icon-photo"
+                />
+              </div>
+              <div class="payment-system-name">Web Money</div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__contacts footer__area-cont">
+          <div class="footer__vertical-line"></div>
+          <div class="footer__contacts-list">
+            <a class="footer__link" href="mailto:info@ipsum228.com">
+              <div class="footer__contact">
+                <div class="contact-icon">
+                  <img
+                    src="media/icons/mail.png"
+                    alt="mail"
+                    class="contact-image"
+                  />
+                </div>
+                <div class="contact-name">info@ipsum228.com</div>
+              </div>
+            </a>
+            <a href="" class="footer__link">
+              <div class="footer__contact">
+                <div class="contact-icon">
+                  <img
+                    src="media/icons/vk.png"
+                    alt="vk"
+                    class="contact-image"
+                  />
+                </div>
+                <div class="contact-name">Мы вконтакте</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
