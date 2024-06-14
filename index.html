@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/header/header.css" />
     <link rel="stylesheet" href="css/intro/intro.css" />
     <link rel="stylesheet" href="css/order/order.css" />
+    <link rel="stylesheet" href="css/reviews/reviews.css" />
     <link rel="stylesheet" href="css/footer/footer.css" />
   </head>
   <body>
@@ -72,7 +73,7 @@
           Перед заполнением формы ознакомьтесь с нашей схемой работы!
         </p>
         <div class="order__steps">
-          <div class="order__step">
+          <div class="order__step order__step-1">
             <div class="order__step__icon">
               <img
                 src="media/icons/search.png"
@@ -84,8 +85,12 @@
               Lorem ipsum dolor sit amet
             </div>
           </div>
-          <div class="dotted__line__cont">
-            <div class="order__step__dotted-line"></div>
+          <div class="order__step__dotted-line">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
           </div>
 
           <div class="order__step">
@@ -100,8 +105,12 @@
               Сonsecteturadipiscing elit
             </div>
           </div>
-          <div class="dotted__line__cont">
-            <div class="order__step__dotted-line"></div>
+          <div class="order__step__dotted-line">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
           </div>
           <div class="order__step">
             <div class="order__step__icon">
@@ -115,8 +124,12 @@
               Sed do eiusmod tempor
             </div>
           </div>
-          <div class="dotted__line__cont">
-            <div class="order__step__dotted-line"></div>
+          <div class="order__step__dotted-line">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
           </div>
           <div class="order__step">
             <div class="order__step__icon">
@@ -130,8 +143,12 @@
               Esse cillum dolore eu fugiat
             </div>
           </div>
-          <div class="dotted__line__cont">
-            <div class="order__step__dotted-line"></div>
+          <div class="order__step__dotted-line">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
           </div>
           <div class="order__step">
             <div class="order__step__icon">
@@ -175,19 +192,86 @@
               <span class="order__progress-text">75%</span>
               <div class="order__progress">
                 <div class="order__progress-bar">
-                  <div class="order__progress-fill" style="width: 75%"></div>
+                  <div
+                    class="order__progress-circle"
+                    style="margin-left: 75%"
+                  ></div>
                 </div>
               </div>
             </div>
-            <input
-              type="file"
-              name="file"
-              class="order__input"
-              placeholder="Прикрепить файл"
-            />
+            <div class="order__input-file-container">
+              <img src="media/icons/file.png" alt="" />
+              <span>Прикрепить файл</span>
+              <input type="file" name="file" class="order__input-file" />
+            </div>
           </div>
           <button class="order__submit" type="submit">Отправить</button>
         </form>
+      </section>
+      <!-- Slider -->
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__description">
+            Посмотрите на Lorem ipsum dolor sit
+          </div>
+          <div class="reviews__slider">
+            <div class="reviews__slide active">
+              <div class="reviews__author">
+                <div class="reviews__author__author-photo">
+                  <img
+                    src="media/icons/human.png"
+                    alt="human"
+                    class="reviews__author__author-photo__icon"
+                  />
+                </div>
+                Иван Иванов
+              </div>
+              <p class="reviews__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="reviews__review-date">15.12.2023</div>
+            </div>
+            <div class="reviews__slide">
+              <div class="reviews__author">
+                <div class="reviews__author__author-photo">
+                  <img
+                    src="media/icons/human.png"
+                    alt="human"
+                    class="reviews__author__author-photo__icon"
+                  />
+                </div>
+                Мария Петрова
+              </div>
+              <p class="reviews__text">
+                Sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+              </p>
+              <div class="reviews__review-date">01.11.2022</div>
+            </div>
+            <div class="reviews__slide">
+              <div class="reviews__author">
+                <div class="reviews__author__author-photo">
+                  <img
+                    src="media/icons/human.png"
+                    alt="human"
+                    class="reviews__author__author-photo__icon"
+                  />
+                </div>
+                Алексей Смирнов
+              </div>
+              <p class="reviews__text">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <div class="reviews__review-date">21.03.2022</div>
+            </div>
+          </div>
+          <div class="reviews__controls">
+            <button class="reviews__control reviews__control--prev">❮</button>
+            <button class="reviews__control reviews__control--next">❯</button>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -267,5 +351,7 @@
         </div>
       </div>
     </footer>
+    <script src="css/order/order__progress-bar.js"></script>
+    <script src="css/reviews/reviews.js"></script>
   </body>
 </html>
