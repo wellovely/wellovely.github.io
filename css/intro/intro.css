@@ -1,8 +1,11 @@
 .intro {
   background-image: url("../../media/img/intro.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: cover;
+}
+
+.intro__fade {
   height: 750px;
   padding: 150px 0px;
   color: white;
@@ -94,6 +97,13 @@
 @media (max-width: 768px) {
   .intro {
     height: fit-content;
+  }
+
+  .intro__fade {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
   }
 
   .intro__button {

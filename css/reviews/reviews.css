@@ -64,12 +64,15 @@
 }
 
 .reviews__slide.active {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .reviews__text {
   font-size: 1.2em;
   margin-bottom: 10px;
+  text-align: start;
 }
 
 .reviews__author {
@@ -83,7 +86,9 @@
 
 .reviews__author__author-photo {
   width: 50px;
+  min-width: 50px;
   height: 50px;
+  min-height: 50px;
   border-radius: 9999px;
   display: flex;
   justify-content: center;
@@ -93,7 +98,9 @@
 
 .reviews__author__author-photo__icon {
   width: 30px;
+  min-width: 30px;
   height: 30px;
+  min-height: 30px;
 }
 
 .reviews__controls {
@@ -113,4 +120,10 @@
 
 .reviews__control:hover {
   opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .reviews__slide {
+    height: 300px;
+  }
 }
