@@ -1,361 +1,499 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business Layout</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/header/header.css" />
-    <link rel="stylesheet" href="css/intro/intro.css" />
-    <link rel="stylesheet" href="css/order/order.css" />
-    <link rel="stylesheet" href="css/reviews/reviews.css" />
-    <link rel="stylesheet" href="css/footer/footer.css" />
+    <meta
+      name="description"
+      content="MediaZone – a modern photo and video studio offering professional studio and street photography services, video production, and in-studio video sessions. Capture your important moments with our experienced specialists and cutting-edge technology."
+    />
+    <meta
+      name="keywords"
+      content="photo studio, video studio, professional photography, studio photography, street photography, video production, in-studio video sessions"
+    />
+    <title>MediaZone – Professional Photo and Video Studio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.webp" type="image/x-icon" />
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="header__container container">
-        <div class="header__logo">
-          <a href="#" class="header__logo__link"
-            >LOREMIPSUM.<span class="header__logo__accent">NET</span></a
-          >
-        </div>
-        <nav class="header__nav">
-          <a href="#" class="header__link header__link__active">Бизнес</a>
-          <a href="#" class="header__link">О нас</a>
-          <a href="#" class="header__link">Цены</a>
-          <a href="#" class="header__link">Оформить заказ</a>
+    <div class="flex flex-col items-center w-full max-w-[1920px] m-auto">
+      <header
+        class="w-full flex justify-between items-center gap-5 p-5 md:p-10"
+      >
+        <a href="index.html" class="text-xl md:text-4xl font-bold"
+          ><h2>MediaZone</h2></a
+        >
+
+        <nav class="flex justify-end items-end gap-3 md:gap-5">
+          <a href="index.html" class="hover:opacity-75 p-2">Home</a>
+          <a href="about.html" class="hover:opacity-75 p-2">About Us</a>
         </nav>
-      </div>
-    </header>
-    <main class="main">
-      <!-- Intro -->
-      <section class="intro">
-        <div class="intro__fade">
-          <div class="intro__content container">
-            <h1 class="intro__title">
-              <span class="intro__title__accent">Lorem ipsum</span> dolor sit
-              <br />
-              amet consectetur
-              <span class="intro__title__accent">adipiscing</span>
-            </h1>
-            <div class="intro__text">
-              <h3 class="intro__text__heading">
-                At vero eos et accusamus et iusto odio dignissimos ducimus!
-              </h3>
-              <ul class="intro__text__list">
-                <li class="intro__text__list_element">
-                  Totam rem aperiam eaque ipsa
-                </li>
-                <li class="intro__text__list_element">
-                  Sit voluptatem accusantium doloremque laudantium
-                </li>
-                <li class="intro__text__list_element">
-                  Sed ut perspiciatis, unde omnis iste natus error
-                </li>
-              </ul>
-            </div>
-            <div class="intro__actions">
-              <button class="intro__button intro__button__order">
-                Заказать
+      </header>
+      <main>
+        <section
+          class="w-full min-h-[75vh] flex flex-col md:flex-row justify-between md:justify-between items-center md:items-end gap-5 p-5 md:p-10 bg-[url('media/hero.webp')] bg-cover bg-center bg-no-repeat"
+        >
+          <p class="w-full md:max-w-[30%] font-bold text-center">
+            MediaZone is not just a photo and video studio, it is a space where
+            dreams come to life, where every frame and every moment turn into a
+            work of art. Here, talent and technology merge together, creating
+            unique stories that remain in the memory forever.
+          </p>
+          <h1 class="text-4xl md:text-6xl font-black drop-shadow">
+            Photos with a soul
+          </h1>
+        </section>
+        <section
+          class="w-full min-h-[75vh] flex flex-col md:flex-row justify-between md:justify-between items-center gap-7 p-5 md:p-10 bg-[url('media/about.webp')] bg-cover bg-center bg-no-repeat"
+        >
+          <h2 class="text-4xl md:text-6xl font-black drop-shadow">
+            What is MediaZone?
+          </h2>
+          <div
+            class="flex flex-col justify-center items-center w-full md:max-w-[30%] mt-10"
+          >
+            <p class="font-bold text-center">
+              MediaZone is a modern photo and video studio specializing in
+              creating high–quality images and videos. It is a space where
+              professionalism, creativity and advanced technologies combine to
+              capture and convey the most significant moments and emotions.
+              Mediazona employs specialists who are able to see beauty in the
+              ordinary and create unique, meaningful visual stories.
+            </p>
+            <a href="about.html" class="w-fit">
+              <button
+                class="w-fit border-2 bg-transparent mt-5 px-5 py-4 hover:bg-white/90 hover:text-black transition cursor-pointer"
+              >
+                Read more
               </button>
-              <button class="intro__button intro__button__details">
-                Подробнее
-              </button>
+            </a>
+          </div>
+        </section>
+        <section
+          class="w-full min-h-[75vh] flex flex-col items-center gap-7 p-5 md:p-10 bg-gradient-to-r from-white/20 to-black"
+        >
+          <h2 class="text-4xl md:text-6xl font-black drop-shadow">
+            Our services
+          </h2>
+          <p class="w-full md:max-w-[50%] mt-10 font-bold text-center">
+            At MediaZone, we offer a comprehensive range of services designed to
+            capture and preserve your most cherished moments with unparalleled
+            quality and creativity. Whether you're looking for studio sessions,
+            street photography, or professional video production, we have the
+            expertise and passion to bring your vision to life.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div
+              class="flex flex-col justify-start items-center text-center gap-3"
+            >
+              <div
+                class="flex justify-center items-center w-full aspect-[3/4] overflow-hidden"
+              >
+                <img
+                  src="media/photo.jpg"
+                  alt="photo"
+                  class="w-full aspect-[3/4] shadow-inner"
+                />
+              </div>
+              <div class="text-center">
+                <h3 class="text-3-xl md:text-4xl mb-4">Studio Photography</h3>
+                <p>
+                  Our studio photography services provide a controlled
+                  environment where lighting, backdrop, and composition are
+                  meticulously arranged to highlight your best features. Ideal
+                  for portraits, family photos, and professional headshots, our
+                  studio sessions ensure every detail is perfect, capturing the
+                  essence of the moment with clarity and style.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-start items-center text-center gap-3"
+            >
+              <div
+                class="flex justify-center items-center w-full aspect-[3/4] relative overflow-hidden"
+              >
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playinline
+                  class="w-full aspect-[3/4] shadow-inner absolute top-0 bottom-0 left-0 right-0"
+                >
+                  <source src="media/video/video.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="text-center">
+                <h3 class="text-3-xl md:text-4xl mb-4">Video Production</h3>
+                <p>
+                  MediaZone also specializes in video production, offering
+                  everything from corporate videos and promotional content to
+                  personal projects and event coverage. Our team of
+                  videographers and editors work closely with you to produce
+                  compelling videos that convey your message powerfully and
+                  effectively. With cutting-edge equipment and a keen eye for
+                  detail, we ensure your videos are not only visually stunning
+                  but also engaging and memorable.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-start items-center text-center gap-3"
+            >
+              <div
+                class="flex justify-center items-center w-full aspect-[3/4] overflow-hidden"
+              >
+                <img
+                  src="media/street.webp"
+                  alt="photo"
+                  class="w-full aspect-[3/4] shadow-inner"
+                />
+              </div>
+              <div class="text-center">
+                <h3 class="text-3-xl md:text-4xl mb-4">Street Photography</h3>
+                <p>
+                  For those who prefer a more spontaneous and dynamic approach,
+                  our street photography service captures the raw beauty and
+                  genuine emotions of everyday life. Our skilled photographers
+                  are adept at finding the extraordinary in the ordinary,
+                  creating stunning visual stories that resonate with
+                  authenticity and character.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Order  -->
-      <section class="order container">
-        <h2 class="order__title">
-          Оформление <span class="order__title__accent">заказа</span>
-        </h2>
-        <p class="order__description">
-          Перед заполнением формы ознакомьтесь с нашей схемой работы!
-        </p>
-        <div class="order__steps">
-          <div class="order__step order__step-1">
-            <div class="order__step__icon">
-              <img
-                src="media/icons/search.png"
-                alt="search"
-                class="order__step__img"
-              />
+        </section>
+        <section
+          class="w-full min-h-[75vh] flex flex-col items-center gap-7 p-5 md:p-10 bg-black"
+        >
+          <h2 class="text-4xl md:text-6xl font-black drop-shadow">Gallery</h2>
+          <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div
+              class="w-full flex flex-col p-5 md:p-7 bg-gray-300 relative hover:scale-105 hover:drop-shadow-2xl transition"
+            >
+              <div
+                class="flex justify-center items-center aspect-square overflow-hidden"
+              >
+                <img
+                  src="media/photo-gallery-1.jpg"
+                  alt="photo"
+                  class="w-full aspect-square bg-black"
+                />
+              </div>
+              <div
+                class="flex items-center w-full bg-gray-300 pt-10 text-black"
+              >
+                <h4 class="w-full text-end -rotate-12 text-2xl">Photo</h4>
+              </div>
             </div>
-            <div class="order__step__name truncate-overflow">
-              Lorem ipsum dolor sit amet
+            <div
+              class="w-full flex flex-col p-5 md:p-7 bg-gray-300 relative hover:scale-105 hover:drop-shadow-2xl transition"
+            >
+              <div
+                class="flex justify-center items-center aspect-square overflow-hidden"
+              >
+                <img
+                  src="media/photo-gallery-2.jpg"
+                  alt="photo"
+                  class="w-full aspect-square bg-black"
+                />
+              </div>
+              <div
+                class="flex items-center w-full bg-gray-300 pt-10 text-black"
+              >
+                <h4 class="w-full text-end -rotate-12 text-2xl">Photo</h4>
+              </div>
+            </div>
+            <div
+              class="w-full flex flex-col p-5 md:p-7 bg-gray-300 relative hover:scale-105 hover:drop-shadow-2xl transition"
+            >
+              <div
+                class="flex justify-center items-center aspect-square overflow-hidden"
+              >
+                <img
+                  src="media/photo-gallery-3.jpg"
+                  alt="photo"
+                  class="w-full aspect-square bg-black"
+                />
+              </div>
+              <div
+                class="flex items-center w-full bg-gray-300 pt-10 text-black"
+              >
+                <h4 class="w-full text-end -rotate-12 text-2xl">Photo</h4>
+              </div>
+            </div>
+            <div
+              class="w-full flex flex-col p-5 md:p-7 bg-gray-300 relative hover:scale-105 hover:drop-shadow-2xl transition"
+            >
+              <div
+                class="flex justify-center items-center aspect-square overflow-hidden"
+              >
+                <img
+                  src="media/photo-gallery-4.jpg"
+                  alt="photo"
+                  class="w-full aspect-square bg-black"
+                />
+              </div>
+              <div
+                class="flex items-center w-full bg-gray-300 pt-10 text-black"
+              >
+                <h4 class="w-full text-end -rotate-12 text-2xl">Photo</h4>
+              </div>
+            </div>
+            <div
+              class="w-full flex flex-col p-5 md:p-7 bg-gray-300 relative hover:scale-105 hover:drop-shadow-2xl transition"
+            >
+              <div
+                class="flex justify-center items-center aspect-square overflow-hidden"
+              >
+                <img
+                  src="media/photo-gallery-5.jpg"
+                  alt="photo"
+                  class="w-full aspect-square bg-black"
+                />
+              </div>
+              <div
+                class="flex items-center w-full bg-gray-300 pt-10 text-black"
+              >
+                <h4 class="w-full text-end -rotate-12 text-2xl">Photo</h4>
+              </div>
+            </div>
+            <div
+              class="w-full flex flex-col p-5 md:p-7 bg-gray-300 relative hover:scale-105 hover:drop-shadow-2xl transition"
+            >
+              <div
+                class="flex justify-center items-center aspect-square overflow-hidden"
+              >
+                <img
+                  src="media/photo-gallery-6.jpg"
+                  alt="photo"
+                  class="w-full aspect-square bg-black"
+                />
+              </div>
+              <div
+                class="flex items-center w-full bg-gray-300 pt-10 text-black"
+              >
+                <h4 class="w-full text-end -rotate-12 text-2xl">Photo</h4>
+              </div>
             </div>
           </div>
-          <div class="order__step__dotted-line">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-
-          <div class="order__step">
-            <div class="order__step__icon">
-              <img
-                src="media/icons/percent.png"
-                alt="percent"
-                class="order__step__img"
-              />
+        </section>
+        <section
+          class="w-full min-h-[75vh] flex flex-col items-center gap-7 p-5 md:p-10 bg-gradient-to-r from-white/20 to-black"
+        >
+          <h2 class="text-4xl md:text-6xl font-black drop-shadow">Reviews</h2>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+            <div
+              class="flex flex-col border border-white/70 bg-white/90 py-5 px-4 gap-2 text-black"
+            >
+              <div
+                class="flex justify-start items-center font-bold text-3xl gap-3"
+              >
+                <img
+                  src="media/profile.png"
+                  alt="profile icon"
+                  class="w-10 aspect-square"
+                />
+                <h3>Anna S.</h3>
+              </div>
+              <div class="flex justify-start items-center">
+                <p class="italic">
+                  "Recently we had the opportunity to conduct a video shoot in
+                  the dance studio, and I was absolutely delighted! The studio
+                  provides excellent conditions for filming: a spacious hall
+                  with perfect lighting and a professionally equipped
+                  playground. I would like to express special gratitude for the
+                  excellent organization of the process — everything was clearly
+                  thought out and coordinated. The video operator showed a high
+                  level of skill, subtly emphasizing each movement of the
+                  dancers. Thanks to this, the end result was really impressive!
+                  I recommend it to anyone who is looking for high-quality video
+                  shooting services in a cozy and creative atmosphere."
+                </p>
+              </div>
             </div>
-            <div class="order__step__name truncate-overflow">
-              Сonsecteturadipiscing elit
+            <div
+              class="flex flex-col border border-white/70 bg-white/90 py-5 px-4 gap-2 text-black"
+            >
+              <div
+                class="flex justify-start items-center font-bold text-3xl gap-3"
+              >
+                <img
+                  src="media/profile.png"
+                  alt="profile icon"
+                  class="w-10 aspect-square"
+                />
+                <h3>John B.</h3>
+              </div>
+              <div class="flex justify-start items-center">
+                <p class="italic">
+                  "The location for the shoot was chosen perfectly, with
+                  beautiful landscapes and picturesque backgrounds. The
+                  photographer showed high professionalism, skillfully working
+                  with natural light and finding the most successful angles. He
+                  also created a light and relaxed atmosphere, making everyone
+                  feel comfortable and confident in front of the camera. The
+                  photos turned out to be lively, bright and very natural. I was
+                  completely satisfied with the result and recommend it to
+                  anyone who wants to capture beautiful moments in nature."
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col border border-white/70 bg-white/90 py-5 px-4 gap-2 text-black"
+            >
+              <div
+                class="flex justify-start items-center font-bold text-3xl gap-3"
+              >
+                <img
+                  src="media/profile.png"
+                  alt="profile icon"
+                  class="w-10 aspect-square"
+                />
+                <h3>Alex R.</h3>
+              </div>
+              <div class="flex justify-start items-center">
+                <p class="italic">
+                  "I recently had the opportunity to take part in a studio
+                  shoot, and it was an amazing experience! The studio turned out
+                  to be incredibly professional: modern equipment, excellent
+                  lighting and thoughtful decorations created ideal conditions
+                  for shooting. The team of specialists worked harmoniously and
+                  professionally, helping at every stage of the process. The
+                  photographer managed to convey all our ideas and ideas by
+                  offering interesting creative solutions. The result exceeded
+                  all expectations — the photos turned out to be stylish,
+                  expressive and of high quality. I will definitely come back
+                  here again and recommend it to anyone who is looking for a
+                  professional studio for filming!"
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col border border-white/70 bg-white/90 py-5 px-4 gap-2 text-black"
+            >
+              <div
+                class="flex justify-start items-center font-bold text-3xl gap-3"
+              >
+                <img
+                  src="media/profile.png"
+                  alt="profile icon"
+                  class="w-10 aspect-square"
+                />
+                <h3>Shon M.</h3>
+              </div>
+              <div class="flex justify-start items-center">
+                <p class="italic">
+                  "We recently did a shoot for our clothing brand, and it was an
+                  exceptional experience! The team of professionals worked
+                  harmoniously and creatively, ranging from stylists and makeup
+                  artists to photographers and assistants. The location and
+                  studio equipment were chosen perfectly, which allowed us to
+                  fully reveal the uniqueness of our collection. The
+                  photographer easily found a common language with the models,
+                  creating a relaxed and productive atmosphere. As a result, we
+                  got great photos that perfectly convey the style and concept
+                  of our brand. We are very pleased with the cooperation and
+                  look forward to new projects together!"
+                </p>
+              </div>
             </div>
           </div>
-          <div class="order__step__dotted-line">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="order__step">
-            <div class="order__step__icon">
-              <img
-                src="media/icons/application.png"
-                alt="application"
-                class="order__step__img"
-              />
-            </div>
-            <div class="order__step__name truncate-overflow">
-              Sed do eiusmod tempor
-            </div>
-          </div>
-          <div class="order__step__dotted-line">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="order__step">
-            <div class="order__step__icon">
-              <img
-                src="media/icons/email.png"
-                alt="email"
-                class="order__step__img"
-              />
-            </div>
-            <div class="order__step__name truncate-overflow">
-              Esse cillum dolore eu fugiat
-            </div>
-          </div>
-          <div class="order__step__dotted-line">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="order__step">
-            <div class="order__step__icon">
-              <img
-                src="media/icons/cash.png"
-                alt="cash"
-                class="order__step__img"
-              />
-            </div>
-            <div class="order__step__name truncate-overflow">
-              Esse cillum dolore eu fugiat
-            </div>
-          </div>
-        </div>
-        <form class="form">
-          <div class="order__form">
-            <select class="order__select" name="system-type" required>
-              <option value="">Выберите тип системы</option>
-              <option value="">macos</option>
-              <option value="">windows</option>
-              <option value="">linux</option>
-            </select>
+        </section>
+        <section
+          class="w-full min-h-[75vh] flex flex-col items-center gap-7 p-5 md:p-10 bg-black"
+        >
+          <h2 class="text-4xl md:text-6xl font-black drop-shadow">Sign Up</h2>
+          <form
+            action="thanks_form.php"
+            id="form"
+            action="submit_form.php"
+            method="POST"
+            class="flex flex-col justify-center gap-5 px-4 py-7 border w-full max-w-2xl"
+          >
             <input
-              class="order__input"
+              type="name"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+              class="border-2 bg-transparent px-2 py-4 focus:outline-none"
+            />
+            <input
               type="email"
               name="email"
-              placeholder="Ваш e-mail"
+              id="email"
+              placeholder="Email"
               required
+              class="border-2 bg-transparent px-2 py-4 focus:outline-none"
             />
-            <input
-              class="order__input"
-              type="text"
-              name="name"
-              placeholder="Ваше имя"
+            <textarea
+              name="text"
+              id="text"
               required
-            />
-            <div class="order__progress-cont">
-              <p class="order__progress-description">
-                Sed ut perspiciatis, unde omnis iste natus
-              </p>
-              <span class="order__progress-text">75%</span>
-              <div class="order__progress">
-                <div class="order__progress-bar">
-                  <div
-                    class="order__progress-circle"
-                    style="margin-left: 75%"
-                  ></div>
-                </div>
-              </div>
-            </div>
-            <div class="order__input-file-container">
-              <img src="media/icons/file.png" alt="" />
-              <span>Прикрепить файл</span>
-              <input type="file" name="file" class="order__input-file" />
-            </div>
-          </div>
-          <button class="order__submit" type="submit">Отправить</button>
-        </form>
-      </section>
-      <!-- Slider -->
-      <section class="reviews">
-        <div class="container">
-          <h2 class="reviews__title">Отзывы</h2>
-          <div class="reviews__description">
-            Посмотрите на Lorem ipsum dolor sit
-          </div>
-          <div class="reviews__slider">
-            <div class="reviews__slide active">
-              <div class="reviews__author">
-                <div class="reviews__author__author-photo">
-                  <img
-                    src="media/icons/human.png"
-                    alt="human"
-                    class="reviews__author__author-photo__icon"
-                  />
-                </div>
-                Иван Иванов
-              </div>
-              <p class="reviews__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <div class="reviews__review-date">15.12.2023</div>
-            </div>
-            <div class="reviews__slide">
-              <div class="reviews__author">
-                <div class="reviews__author__author-photo">
-                  <img
-                    src="media/icons/human.png"
-                    alt="human"
-                    class="reviews__author__author-photo__icon"
-                  />
-                </div>
-                Мария Петрова
-              </div>
-              <p class="reviews__text">
-                Sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.
-              </p>
-              <div class="reviews__review-date">01.11.2022</div>
-            </div>
-            <div class="reviews__slide">
-              <div class="reviews__author">
-                <div class="reviews__author__author-photo">
-                  <img
-                    src="media/icons/human.png"
-                    alt="human"
-                    class="reviews__author__author-photo__icon"
-                  />
-                </div>
-                Алексей Смирнов
-              </div>
-              <p class="reviews__text">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="reviews__review-date">21.03.2022</div>
-            </div>
-          </div>
-          <div class="reviews__controls">
-            <button class="reviews__control reviews__control--prev">❮</button>
-            <button class="reviews__control reviews__control--next">❯</button>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer__container container">
-        <div class="footer__info footer__area-cont">
-          <p>
-            © 2018
-            <span class="footer__info__compant-name">«LoremIpsum.net»</span> Все
-            права защищены.
-          </p>
-          <div class="footer__vertical-line"></div>
-        </div>
-        <div class="footer__payment-systems footer__area-cont">
-          <div class="payment-systems-list">
-            <div class="payment-systems__system">
-              <div class="payment-system-icon">
-                <img
-                  src="media/icons/qiwi.png"
-                  alt="qiwi"
-                  class="payment-icon-photo"
+              class="border-2 bg-transparent px-2 py-4 focus:outline-none"
+            >
+Hello, my name is... I wanna...</textarea
+            >
+            <div
+              class="flex flex-col md:flex-row justify-center items-center gap-5"
+            >
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  id="privacyPolicy"
+                  name="privacyPolicy"
+                  required
                 />
+                <label for="privacyPolicy"
+                  >I accept the
+                  <a href="privacy-policy.html"><u>Privacy Policy</u></a></label
+                >
               </div>
-              <div class="payment-system-name">QIWI wallet</div>
+              <button
+                type="submit"
+                class="w-fit border-2 bg-transparent mt-2 px-5 py-4 hover:bg-white/90 hover:text-black transition cursor-pointer"
+              >
+                Sign Up
+              </button>
             </div>
-            <div class="payment-systems__system">
-              <div class="payment-system-icon">
-                <img
-                  src="media/icons/yandex-money.png"
-                  alt="Yandex Money"
-                  class="payment-icon-photo"
-                />
-              </div>
-              <div class="payment-system-name">Yandex Money</div>
-            </div>
-            <div class="payment-systems__system">
-              <div class="payment-system-icon">
-                <img
-                  src="media/icons/web-money.png"
-                  alt="Web Money"
-                  class="payment-icon-photo"
-                />
-              </div>
-              <div class="payment-system-name">Web Money</div>
-            </div>
+          </form>
+        </section>
+      </main>
+      <footer
+        class="w-full min-h-[30vh] flex flex-col md:flex-row justify-between md:justify-end items-center md:items-end gap-5 p-5 md:p-10 bg-[url('media/footer.webp')] bg-contain bg-left bg-no-repeat"
+      >
+        <div class="flex flex-col items-end justify-end gap-5">
+          <h2 class="text-4xl md:text-6xl font-black drop-shadow">MediaZone</h2>
+          <div class="flex gap-5 justify-end">
+            <a href="tel:+918749145208" class="hover:opacity-70"
+              >+918749145208</a
+            >
+            <a href="mailto:mediazone@gmail.com" class="hover:opacity-70"
+              >mediazone@gmail.com</a
+            >
+          </div>
+          <div class="flex gap-5 justify-end">
+            <a href="privacy-policy.html" class="hover:opacity-70"
+              >Privacy Policy</a
+            >
+            <a href="terms-conditions.html" class="hover:opacity-70"
+              >Terms Conditions</a
+            >
+          </div>
+          <div class="flex flex-col items-end justify-between">
+            <p class="text-end">
+              <a
+                href="https://maps.app.goo.gl/Pd54TjcmDcBLeXf77"
+                target="_blank"
+                >D2/309-312, Pandara Rd, Flats, India Gate, New Delhi, Delhi
+                110003</a
+              >
+            </p>
+            <p class="text-end">&copy; 2024 MEDIAZONE. All rights reserved.</p>
           </div>
         </div>
-        <div class="footer__contacts footer__area-cont">
-          <div class="footer__vertical-line"></div>
-          <div class="footer__contacts-list">
-            <a class="footer__link" href="mailto:info@ipsum228.com">
-              <div class="footer__contact">
-                <div class="contact-icon">
-                  <img
-                    src="media/icons/mail.png"
-                    alt="mail"
-                    class="contact-image"
-                  />
-                </div>
-                <div class="contact-name">info@ipsum228.com</div>
-              </div>
-            </a>
-            <a href="" class="footer__link">
-              <div class="footer__contact">
-                <div class="contact-icon">
-                  <img
-                    src="media/icons/vk.png"
-                    alt="vk"
-                    class="contact-image"
-                  />
-                </div>
-                <div class="contact-name">Мы вконтакте</div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="css/order/order__progress-bar.js"></script>
-    <script src="css/reviews/reviews.js"></script>
+      </footer>
+    </div>
   </body>
 </html>
