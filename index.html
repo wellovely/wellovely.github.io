@@ -1,499 +1,682 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DUDU - Pizza & Sushi | Fresh Flavors, Unforgettable Moments</title>
     <meta
       name="description"
-      content="MediaZone – a modern photo and video studio offering professional studio and street photography services, video production, and in-studio video sessions. Capture your important moments with our experienced specialists and cutting-edge technology."
+      content="DUDU - ресторан, где подают вкуснейшую пиццу и суши, приготовленные из свежих ингредиентов по традиционным рецептам. Закажите доставку или приходите к нам, чтобы насладиться незабываемым вкусом!"
     />
     <meta
       name="keywords"
-      content="photo studio, video studio, professional photography, studio photography, street photography, video production, in-studio video sessions"
+      content="пицца, суши, доставка, роллы, ресторан, еда, вкусный, японская кухня, итальянская кухня"
     />
-    <title>MediaZone – Professional Photo and Video Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon.webp" type="image/x-icon" />
   </head>
-  <body>
-    <div class="flex flex-col items-center w-full max-w-[1920px] m-auto">
-      <header
-        class="w-full flex justify-between items-center gap-5 p-5 md:p-10"
-      >
-        <a href="index.html" class="text-xl md:text-4xl font-bold"
-          ><h2>MediaZone</h2></a
-        >
+  <body class="bg-[#faf9f5]">
+    <header
+      class="w-full grid grid-rows-3 min-h-35vh md:min-h-[55vh] bg-[url('media/hero.png')] bg-center bg-cover bg-no-repeat text-white overflow-hidden"
+    >
+      <nav class="w-full justify-between items-center gap-5 p-5">
+        <div class="flex justify-between items-center gap-3 md:gap-5">
+          <div class="flex items-center">
+            <a
+              href="index.html"
+              class="hidden md:inline-flex text-5xl font-bold mr-5"
+              >DUDU</a
+            >
+            <a
+              href="#pizza"
+              class="px-3 md:px-4 py-2 text-white/90 hover:text-white hover:bg-white/20 rounded-full transition"
+              >Pizza</a
+            >
+            <a
+              href="#sushi"
+              class="px-3 md:px-4 py-2 text-white/90 hover:text-white hover:bg-white/20 rounded-full transition"
+              >Sushi</a
+            >
+            <a
+              href="about.html"
+              class="px-3 md:px-4 py-2 text-white/90 hover:text-white hover:bg-white/20 rounded-full transition"
+              >About Us</a
+            >
+          </div>
+          <div class="flex justify-end">
+            <a
+              href="#order"
+              class="hidden md:flex px-3 md:px-10 py-3 rounded-full bg-[#ec6e5c] hover:opacity-70 transition"
+              >Order Now</a
+            >
+            <a
+              href="#order"
+              class="flex md:hidden px-3 md:px-10 py-3 rounded-full bg-[#ec6e5c] hover:opacity-70 transition"
+              >Order</a
+            >
+          </div>
+        </div>
+      </nav>
+      <div class="w-full flex justify-center items-center">
+        <h2 class="text-xl font-bold uppercase tracking-[.7em]">new menu</h2>
+      </div>
+    </header>
 
-        <nav class="flex justify-end items-end gap-3 md:gap-5">
-          <a href="index.html" class="hover:opacity-75 p-2">Home</a>
-          <a href="about.html" class="hover:opacity-75 p-2">About Us</a>
-        </nav>
-      </header>
-      <main>
-        <section
-          class="w-full min-h-[75vh] flex flex-col md:flex-row justify-between md:justify-between items-center md:items-end gap-5 p-5 md:p-10 bg-[url('media/hero.webp')] bg-cover bg-center bg-no-repeat"
-        >
-          <p class="w-full md:max-w-[30%] font-bold text-center">
-            MediaZone is not just a photo and video studio, it is a space where
-            dreams come to life, where every frame and every moment turn into a
-            work of art. Here, talent and technology merge together, creating
-            unique stories that remain in the memory forever.
-          </p>
-          <h1 class="text-4xl md:text-6xl font-black drop-shadow">
-            Photos with a soul
+    <main class="flex flex-col items-center px-5">
+      <section class="flex flex-col md:flex-row gap-5 items-center py-20">
+        <div class="flex justify-center items-center max-w-56">
+          <!-- <img
+            src="media/pizza.png"
+            alt="pizza"
+            class="w-full rounded-full drop-shadow-xl hover:scale-105 duration-300 transition"
+          /> -->
+        </div>
+        <div class="w-full max-w-5xl flex flex-col items-center">
+          <h1 class="text-5xl font-bold text-bold mb-5">
+            A Taste You Can't Forget!
           </h1>
-        </section>
-        <section
-          class="w-full min-h-[75vh] flex flex-col md:flex-row justify-between md:justify-between items-center gap-7 p-5 md:p-10 bg-[url('media/about.webp')] bg-cover bg-center bg-no-repeat"
-        >
-          <h2 class="text-4xl md:text-6xl font-black drop-shadow">
-            What is MediaZone?
-          </h2>
-          <div
-            class="flex flex-col justify-center items-center w-full md:max-w-[30%] mt-10"
+          <p class="text-lg leading-8">
+            Welcome to DUDU, a haven where fresh flavors embark on a vibrant
+            dance to create unforgettable culinary memories. We're more than
+            just a restaurant; we're passionate artisans dedicated to bringing
+            the very soul of Italy and Japan to your table. Our chefs, with
+            hearts brimming with passion, meticulously handcraft every dish
+            using only the finest ingredients. Imagine the explosion of taste -
+            perfectly ripened tomatoes on a wood-fired pizza, the delicate
+            melt-in-your-mouth texture of the freshest sushi. From the timeless
+            classics that have warmed hearts for generations to our innovative
+            creations that push the boundaries of flavor, our menu is a symphony
+            designed to tantalize every taste bud. So, come on in, explore, and
+            embark on a delicious adventure at DUDU.
+          </p>
+          <a
+            href="#menu"
+            class="inline-flex mt-10 px-6 py-3 rounded-full bg-[#ec6e5c] text-white hover:opacity-70 transition"
+            >Explore Our Menu</a
           >
-            <p class="font-bold text-center">
-              MediaZone is a modern photo and video studio specializing in
-              creating high–quality images and videos. It is a space where
-              professionalism, creativity and advanced technologies combine to
-              capture and convey the most significant moments and emotions.
-              Mediazona employs specialists who are able to see beauty in the
-              ordinary and create unique, meaningful visual stories.
+        </div>
+        <div class="flex justify-center items-center max-w-56">
+          <!-- <img
+            src="media/pizza.png"
+            alt="image"
+            class="w-full rounded-full drop-shadow-xl hover:scale-105 duration-300 transition"
+          /> -->
+        </div>
+      </section>
+
+      <section class="w-full max-w-5xl py-20">
+        <ol class="flex items-center w-full mb-5">
+          <li
+            class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-[#ff9484] after:border-4 after:inline-block"
+          >
+            <span
+              class="flex items-center justify-center w-12 h-12 md:w-15 md:h-15 bg-white border border-black/10 rounded-full lg:h-16 lg:w-16 shrink-0 p-2 md:p-3 overflow-hidden"
+            >
+              <img
+                src="media/icons/search.png"
+                alt="choose"
+                class="w-full aspect-square"
+              />
+            </span>
+          </li>
+          <li
+            class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-black/20 after:border-4 after:inline-block"
+          >
+            <span
+              class="flex items-center justify-center w-12 h-12 md:w-15 md:h-15 bg-white border border-black/10 rounded-full lg:h-16 lg:w-16 shrink-0 p-2 md:p-3 overflow-hidden animate-pulse"
+            >
+              <img
+                src="media/icons/form.png"
+                alt="form"
+                class="w-full aspect-square"
+              />
+            </span>
+          </li>
+          <li
+            class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-black/20 after:border-4 after:inline-block"
+          >
+            <span
+              class="flex items-center justify-center w-12 h-12 md:w-15 md:h-15 bg-white border border-black/10 rounded-full lg:h-16 lg:w-16 shrink-0 p-2 md:p-3 overflow-hidden animate-pulse"
+            >
+              <img
+                src="media/icons/cooking.png"
+                alt="cooking"
+                class="w-full aspect-square"
+              />
+            </span>
+          </li>
+          <li class="flex items-center w-fit">
+            <span
+              class="flex items-center justify-center w-12 h-12 md:w-15 md:h-15 bg-white border border-black/10 rounded-full lg:h-16 lg:w-16 shrink-0 p-2 md:p-3 overflow-hidden animate-pulse"
+            >
+              <img
+                src="media/icons/delivery.png"
+                alt="delivery"
+                class="w-full aspect-square"
+              />
+            </span>
+          </li>
+        </ol>
+        <div class="grid grid-cols-4 gap-5 md:gap-10 text-xs md:text-sm">
+          <div class="flex flex-col">
+            <span class="text-lg font-bold">1.</span>
+            <p class="font-bold">Choosing an order</p>
+          </div>
+          <div class="flex flex-col text-center">
+            <span class="text-lg font-bold">2.</span>
+            <p class="font-bold">Making an order</p>
+          </div>
+          <div class="flex flex-col text-center">
+            <span class="text-lg font-bold">3.</span>
+            <p class="font-bold">Preparing an order</p>
+          </div>
+          <div class="flex flex-col text-end">
+            <span class="text-lg font-bold">4.</span>
+            <p class="font-bold">Order delivery</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="w-screen py-20 px-5 flex justify-center items-center bg-[#8FD8A2]"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-2 w-full max-w-5xl gap-5">
+          <div class="flex flex-col justify-center">
+            <h2 class="text-4xl font-bold text-center mb-10">
+              Quality assurance
+            </h2>
+            <p class="text-lg">
+              At DUDU - Sushi & Pizza, we're passionate about creating an
+              exceptional dining experience, and quality is the foundation upon
+              which we build everything. We believe in using only the freshest
+              ingredients, and our commitment to quality assurance means every
+              dish we serve is meticulously prepared to meet the highest
+              standards. This focus on quality extends beyond the ingredients
+              themselves. Our skilled chefs take pride in crafting beautiful
+              presentations that tantalize the eyes as much as the taste buds.
+              The result? A dining experience that is as delicious as it is
+              visually stunning.
             </p>
-            <a href="about.html" class="w-fit">
+            <a href="about.html" class="text-center">
               <button
-                class="w-fit border-2 bg-transparent mt-5 px-5 py-4 hover:bg-white/90 hover:text-black transition cursor-pointer"
+                type="submit"
+                class="px-6 py-3 mt-5 rounded-full bg-[#ec6e5c] text-white hover:opacity-70 transition"
               >
-                Read more
+                Read More
               </button>
             </a>
           </div>
-        </section>
-        <section
-          class="w-full min-h-[75vh] flex flex-col items-center gap-7 p-5 md:p-10 bg-gradient-to-r from-white/20 to-black"
-        >
-          <h2 class="text-4xl md:text-6xl font-black drop-shadow">
-            Our services
-          </h2>
-          <p class="w-full md:max-w-[50%] mt-10 font-bold text-center">
-            At MediaZone, we offer a comprehensive range of services designed to
-            capture and preserve your most cherished moments with unparalleled
-            quality and creativity. Whether you're looking for studio sessions,
-            street photography, or professional video production, we have the
-            expertise and passion to bring your vision to life.
-          </p>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="flex flex-col justify-center">
             <div
-              class="flex flex-col justify-start items-center text-center gap-3"
+              class="w-full aspect-square rounded-2xl bg-[#eda296] overflow-hidden p-5"
             >
-              <div
-                class="flex justify-center items-center w-full aspect-[3/4] overflow-hidden"
-              >
-                <img
-                  src="media/photo.jpg"
-                  alt="photo"
-                  class="w-full aspect-[3/4] shadow-inner"
-                />
-              </div>
-              <div class="text-center">
-                <h3 class="text-3-xl md:text-4xl mb-4">Studio Photography</h3>
-                <p>
-                  Our studio photography services provide a controlled
-                  environment where lighting, backdrop, and composition are
-                  meticulously arranged to highlight your best features. Ideal
-                  for portraits, family photos, and professional headshots, our
-                  studio sessions ensure every detail is perfect, capturing the
-                  essence of the moment with clarity and style.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex flex-col justify-start items-center text-center gap-3"
-            >
-              <div
-                class="flex justify-center items-center w-full aspect-[3/4] relative overflow-hidden"
-              >
-                <video
-                  autoplay
-                  muted
-                  loop
-                  playinline
-                  class="w-full aspect-[3/4] shadow-inner absolute top-0 bottom-0 left-0 right-0"
-                >
-                  <source src="media/video/video.mp4" type="video/mp4" />
-                </video>
-              </div>
-              <div class="text-center">
-                <h3 class="text-3-xl md:text-4xl mb-4">Video Production</h3>
-                <p>
-                  MediaZone also specializes in video production, offering
-                  everything from corporate videos and promotional content to
-                  personal projects and event coverage. Our team of
-                  videographers and editors work closely with you to produce
-                  compelling videos that convey your message powerfully and
-                  effectively. With cutting-edge equipment and a keen eye for
-                  detail, we ensure your videos are not only visually stunning
-                  but also engaging and memorable.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex flex-col justify-start items-center text-center gap-3"
-            >
-              <div
-                class="flex justify-center items-center w-full aspect-[3/4] overflow-hidden"
-              >
-                <img
-                  src="media/street.webp"
-                  alt="photo"
-                  class="w-full aspect-[3/4] shadow-inner"
-                />
-              </div>
-              <div class="text-center">
-                <h3 class="text-3-xl md:text-4xl mb-4">Street Photography</h3>
-                <p>
-                  For those who prefer a more spontaneous and dynamic approach,
-                  our street photography service captures the raw beauty and
-                  genuine emotions of everyday life. Our skilled photographers
-                  are adept at finding the extraordinary in the ordinary,
-                  creating stunning visual stories that resonate with
-                  authenticity and character.
-                </p>
-              </div>
+              <img
+                src="media/pizza.png"
+                alt="pizza"
+                class="w-full animate-bounce-my drop-shadow-lg"
+              />
             </div>
           </div>
-        </section>
-        <section
-          class="w-full min-h-[75vh] flex flex-col items-center gap-7 p-5 md:p-10 bg-black"
-        >
-          <h2 class="text-4xl md:text-6xl font-black drop-shadow">Gallery</h2>
-          <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-5">
-            <div
-              class="w-full flex flex-col p-5 md:p-7 bg-gray-300 relative hover:scale-105 hover:drop-shadow-2xl transition"
-            >
+        </div>
+      </section>
+
+      <section id="menu" class="max-w-5xl py-20">
+        <h2 class="text-4xl font-bold text-center mb-10">Our Menu</h2>
+        <div class="grid grid-cols-1 gap-20">
+          <div class="flex flex-col items-center">
+            <h3 class="text-3xl font-bold mb-5">Pizza</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div
-                class="flex justify-center items-center aspect-square overflow-hidden"
+                class="flex flex-col justify-center gap-5 rounded-3xl bg-white p-5 hover:shadow-xl transition"
               >
-                <img
-                  src="media/photo-gallery-1.jpg"
-                  alt="photo"
-                  class="w-full aspect-square bg-black"
-                />
+                <div class="flex justify-center items-center">
+                  <div
+                    class="max-w-52 flex justify-center items-center rounded-xl overflow-hidden"
+                  >
+                    <img
+                      src="media/pizza/pizza.png"
+                      alt="image"
+                      class="w-full aspect-square"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-lg font-medium">Margherita</h4>
+                  <p class="text-sm">
+                    Classic Italian pizza with fresh mozzarella, tomatoes, and
+                    basil.
+                  </p>
+                  <div class="w-full flex items-center justify-between">
+                    <span class="text-sm font-bold">Price: $12.99</span>
+                    <a
+                      href="#order"
+                      class="inline-flex px-6 py-3 rounded-full bg-[#ec6e5c] text-white hover:opacity-70 transition"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
               </div>
               <div
-                class="flex items-center w-full bg-gray-300 pt-10 text-black"
+                class="flex flex-col justify-center gap-5 rounded-3xl bg-white p-5 hover:shadow-xl transition"
               >
-                <h4 class="w-full text-end -rotate-12 text-2xl">Photo</h4>
+                <div class="flex justify-center items-center">
+                  <div
+                    class="max-w-52 flex justify-center items-center rounded-xl overflow-hidden"
+                  >
+                    <img
+                      src="media/pizza/pizza1.png"
+                      alt="image"
+                      class="w-full aspect-square"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-lg font-medium">Margherita</h4>
+                  <p class="text-sm">
+                    Classic Italian pizza with fresh mozzarella, tomatoes, and
+                    basil.
+                  </p>
+                  <div class="w-full flex items-center justify-between">
+                    <span class="text-sm font-bold">Price: $12.99</span>
+                    <a
+                      href="#order"
+                      class="inline-flex px-6 py-3 rounded-full bg-[#ec6e5c] text-white hover:opacity-70 transition"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center gap-5 rounded-3xl bg-white p-5 hover:shadow-xl transition"
+              >
+                <div class="flex justify-center items-center">
+                  <div
+                    class="max-w-52 flex justify-center items-center rounded-xl overflow-hidden"
+                  >
+                    <img
+                      src="media/pizza/pizza2.png"
+                      alt="image"
+                      class="w-full aspect-square"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-lg font-medium">Margherita</h4>
+                  <p class="text-sm">
+                    Classic Italian pizza with fresh mozzarella, tomatoes, and
+                    basil.
+                  </p>
+                  <div class="w-full flex items-center justify-between">
+                    <span class="text-sm font-bold">Price: $12.99</span>
+                    <a
+                      href="#order"
+                      class="inline-flex px-6 py-3 rounded-full bg-[#ec6e5c] text-white hover:opacity-70 transition"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center gap-5 rounded-3xl bg-white p-5 hover:shadow-xl transition"
+              >
+                <div class="flex justify-center items-center">
+                  <div
+                    class="max-w-52 flex justify-center items-center rounded-xl overflow-hidden"
+                  >
+                    <img
+                      src="media/pizza/pizza3.png"
+                      alt="image"
+                      class="w-full aspect-square"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-lg font-medium">Pepperoni</h4>
+                  <p class="text-sm">
+                    Sliced pepperoni, mozzarella cheese, and our signature pizza
+                    sauce.
+                  </p>
+                  <div class="w-full flex items-center justify-between">
+                    <span class="text-sm font-bold">Price: $12.99</span>
+                    <a
+                      href="#order"
+                      class="inline-flex px-6 py-3 rounded-full bg-[#ec6e5c] text-white hover:opacity-70 transition"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center gap-5 rounded-3xl bg-white p-5 hover:shadow-xl transition"
+              >
+                <div class="flex justify-center items-center">
+                  <div
+                    class="max-w-52 flex justify-center items-center rounded-xl overflow-hidden"
+                  >
+                    <img
+                      src="media/pizza/pizza4.png"
+                      alt="image"
+                      class="w-full aspect-square"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-lg font-medium">Hawaiian</h4>
+                  <p class="text-sm">
+                    Ham, pineapple, mozzarella cheese, and our signature pizza
+                    sauce.
+                  </p>
+                  <div class="w-full flex items-center justify-between">
+                    <span class="text-sm font-bold">Price: $12.99</span>
+                    <a
+                      href="#order"
+                      class="inline-flex px-6 py-3 rounded-full bg-[#ec6e5c] text-white hover:opacity-70 transition"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center gap-5 rounded-3xl bg-white p-5 hover:shadow-xl transition"
+              >
+                <div class="flex justify-center items-center">
+                  <div
+                    class="max-w-52 flex justify-center items-center rounded-xl overflow-hidden"
+                  >
+                    <img
+                      src="media/pizza/pizza5.png"
+                      alt="image"
+                      class="w-full aspect-square"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-lg font-medium">Vegetariana</h4>
+                  <p class="text-sm">
+                    A medley of grilled vegetables, mozzarella cheese, and our
+                    signature pizza sauce.
+                  </p>
+                  <div class="w-full flex items-center justify-between">
+                    <span class="text-sm font-bold">Price: $12.99</span>
+                    <a
+                      href="#order"
+                      class="inline-flex px-6 py-3 rounded-full bg-[#ec6e5c] text-white hover:opacity-70 transition"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
-            <div
-              class="w-full flex flex-col p-5 md:p-7 bg-gray-300 relative hover:scale-105 hover:drop-shadow-2xl transition"
+            <a
+              href="#"
+              class="inline-flex px-6 py-3 rounded-full bg-[#ec6e5c] text-white hover:opacity-70 transition mt-10"
+              >View All Pizzas</a
             >
-              <div
-                class="flex justify-center items-center aspect-square overflow-hidden"
-              >
-                <img
-                  src="media/photo-gallery-2.jpg"
-                  alt="photo"
-                  class="w-full aspect-square bg-black"
-                />
-              </div>
-              <div
-                class="flex items-center w-full bg-gray-300 pt-10 text-black"
-              >
-                <h4 class="w-full text-end -rotate-12 text-2xl">Photo</h4>
-              </div>
-            </div>
-            <div
-              class="w-full flex flex-col p-5 md:p-7 bg-gray-300 relative hover:scale-105 hover:drop-shadow-2xl transition"
-            >
-              <div
-                class="flex justify-center items-center aspect-square overflow-hidden"
-              >
-                <img
-                  src="media/photo-gallery-3.jpg"
-                  alt="photo"
-                  class="w-full aspect-square bg-black"
-                />
-              </div>
-              <div
-                class="flex items-center w-full bg-gray-300 pt-10 text-black"
-              >
-                <h4 class="w-full text-end -rotate-12 text-2xl">Photo</h4>
-              </div>
-            </div>
-            <div
-              class="w-full flex flex-col p-5 md:p-7 bg-gray-300 relative hover:scale-105 hover:drop-shadow-2xl transition"
-            >
-              <div
-                class="flex justify-center items-center aspect-square overflow-hidden"
-              >
-                <img
-                  src="media/photo-gallery-4.jpg"
-                  alt="photo"
-                  class="w-full aspect-square bg-black"
-                />
-              </div>
-              <div
-                class="flex items-center w-full bg-gray-300 pt-10 text-black"
-              >
-                <h4 class="w-full text-end -rotate-12 text-2xl">Photo</h4>
-              </div>
-            </div>
-            <div
-              class="w-full flex flex-col p-5 md:p-7 bg-gray-300 relative hover:scale-105 hover:drop-shadow-2xl transition"
-            >
-              <div
-                class="flex justify-center items-center aspect-square overflow-hidden"
-              >
-                <img
-                  src="media/photo-gallery-5.jpg"
-                  alt="photo"
-                  class="w-full aspect-square bg-black"
-                />
-              </div>
-              <div
-                class="flex items-center w-full bg-gray-300 pt-10 text-black"
-              >
-                <h4 class="w-full text-end -rotate-12 text-2xl">Photo</h4>
-              </div>
-            </div>
-            <div
-              class="w-full flex flex-col p-5 md:p-7 bg-gray-300 relative hover:scale-105 hover:drop-shadow-2xl transition"
-            >
-              <div
-                class="flex justify-center items-center aspect-square overflow-hidden"
-              >
-                <img
-                  src="media/photo-gallery-6.jpg"
-                  alt="photo"
-                  class="w-full aspect-square bg-black"
-                />
-              </div>
-              <div
-                class="flex items-center w-full bg-gray-300 pt-10 text-black"
-              >
-                <h4 class="w-full text-end -rotate-12 text-2xl">Photo</h4>
-              </div>
-            </div>
           </div>
-        </section>
-        <section
-          class="w-full min-h-[75vh] flex flex-col items-center gap-7 p-5 md:p-10 bg-gradient-to-r from-white/20 to-black"
-        >
-          <h2 class="text-4xl md:text-6xl font-black drop-shadow">Reviews</h2>
-          <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
-            <div
-              class="flex flex-col border border-white/70 bg-white/90 py-5 px-4 gap-2 text-black"
-            >
+          <div class="flex flex-col items-center">
+            <h3 class="text-3xl font-bold mb-5">Sushi</h3>
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
               <div
-                class="flex justify-start items-center font-bold text-3xl gap-3"
+                class="flex flex-col justify-center gap-5 rounded-3xl bg-white p-5 hover:shadow-xl transition"
               >
-                <img
-                  src="media/profile.png"
-                  alt="profile icon"
-                  class="w-10 aspect-square"
-                />
-                <h3>Anna S.</h3>
+                <div class="flex justify-center items-center">
+                  <div
+                    class="max-w-52 flex justify-center items-center rounded-xl overflow-hidden"
+                  >
+                    <img
+                      src="media/sushi/image.png"
+                      alt="image"
+                      class="w-full aspect-square"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-lg font-medium">Sunset Roll</h4>
+                  <p class="text-sm">
+                    Avocado, cucumber, and crab meat inside-out roll.
+                  </p>
+                  <div class="w-full flex items-center justify-between">
+                    <span class="text-sm font-bold">Price: $12.99</span>
+                    <a
+                      href="#order"
+                      class="inline-flex px-6 py-3 rounded-full bg-[#ec6e5c] text-white hover:opacity-70 transition"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
               </div>
-              <div class="flex justify-start items-center">
-                <p class="italic">
-                  "Recently we had the opportunity to conduct a video shoot in
-                  the dance studio, and I was absolutely delighted! The studio
-                  provides excellent conditions for filming: a spacious hall
-                  with perfect lighting and a professionally equipped
-                  playground. I would like to express special gratitude for the
-                  excellent organization of the process — everything was clearly
-                  thought out and coordinated. The video operator showed a high
-                  level of skill, subtly emphasizing each movement of the
-                  dancers. Thanks to this, the end result was really impressive!
-                  I recommend it to anyone who is looking for high-quality video
-                  shooting services in a cozy and creative atmosphere."
-                </p>
+              <div
+                class="flex flex-col justify-center gap-5 rounded-3xl bg-white p-5 hover:shadow-xl transition"
+              >
+                <div class="flex justify-center items-center">
+                  <div
+                    class="max-w-52 flex justify-center items-center rounded-xl overflow-hidden"
+                  >
+                    <img
+                      src="media/sushi/image1.png"
+                      alt="image"
+                      class="w-full aspect-square"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-lg font-medium">Creamy Delight Roll</h4>
+                  <p class="text-sm">
+                    Cream cheese, avocado, and cucumber inside-out roll.
+                  </p>
+                  <div class="w-full flex items-center justify-between">
+                    <span class="text-sm font-bold">Price: $12.99</span>
+                    <a
+                      href="#order"
+                      class="inline-flex px-6 py-3 rounded-full bg-[#ec6e5c] text-white hover:opacity-70 transition"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center gap-5 rounded-3xl bg-white p-5 hover:shadow-xl transition"
+              >
+                <div class="flex justify-center items-center">
+                  <div
+                    class="max-w-52 flex justify-center items-center rounded-xl overflow-hidden"
+                  >
+                    <img
+                      src="media/sushi/image2.png"
+                      alt="image"
+                      class="w-full aspect-square"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-lg font-medium">Ocean's Dream Roll</h4>
+                  <p class="text-sm">
+                    Tempura shrimp, avocado, cucumber, and eel inside-out roll.
+                  </p>
+                  <div class="w-full flex items-center justify-between">
+                    <span class="text-sm font-bold">Price: $12.99</span>
+                    <a
+                      href="#order"
+                      class="inline-flex px-6 py-3 rounded-full bg-[#ec6e5c] text-white hover:opacity-70 transition"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center gap-5 rounded-3xl bg-white p-5 hover:shadow-xl transition"
+              >
+                <div class="flex justify-center items-center">
+                  <div
+                    class="max-w-52 flex justify-center items-center rounded-xl overflow-hidden"
+                  >
+                    <img
+                      src="media/sushi/image3.png"
+                      alt="image"
+                      class="w-full aspect-square"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-lg font-medium">Eel Garden Roll</h4>
+                  <p class="text-sm">
+                    Tempura shrimp, avocado, cucumber, and eel inside-out roll.
+                  </p>
+                  <div class="w-full flex items-center justify-between">
+                    <span class="text-sm font-bold">Price: $12.99</span>
+                    <a
+                      href="#order"
+                      class="inline-flex px-6 py-3 rounded-full bg-[#ec6e5c] text-white hover:opacity-70 transition"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center gap-5 rounded-3xl bg-white p-5 hover:shadow-xl transition"
+              >
+                <div class="flex justify-center items-center">
+                  <div
+                    class="max-w-52 flex justify-center items-center rounded-xl overflow-hidden"
+                  >
+                    <img
+                      src="media/sushi/image4.png"
+                      alt="image"
+                      class="w-full aspect-square"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-lg font-medium">Heavenly Shrimp Roll</h4>
+                  <p class="text-sm">
+                    Tempura shrimp, avocado, cucumber, and eel inside-out roll.
+                  </p>
+                  <div class="w-full flex items-center justify-between">
+                    <span class="text-sm font-bold">Price: $12.99</span>
+                    <a
+                      href="#order"
+                      class="inline-flex px-6 py-3 rounded-full bg-[#ec6e5c] text-white hover:opacity-70 transition"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center gap-5 rounded-3xl bg-white p-5 hover:shadow-xl transition"
+              >
+                <div class="flex justify-center items-center">
+                  <div
+                    class="max-w-52 flex justify-center items-center rounded-xl overflow-hidden"
+                  >
+                    <img
+                      src="media/sushi/image5.png"
+                      alt="image"
+                      class="w-full aspect-square"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h4 class="text-lg font-medium">Sashimi Symphony Roll</h4>
+                  <p class="text-sm">
+                    Assorted sashimi (tuna, salmon, white fish) on top of rice.
+                  </p>
+                  <div class="w-full flex items-center justify-between">
+                    <span class="text-sm font-bold">Price: $12.99</span>
+                    <a
+                      href="#order"
+                      class="inline-flex px-6 py-3 rounded-full bg-[#ec6e5c] text-white hover:opacity-70 transition"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
-            <div
-              class="flex flex-col border border-white/70 bg-white/90 py-5 px-4 gap-2 text-black"
+            <a
+              href="#"
+              class="inline-flex px-6 py-3 rounded-full bg-[#ec6e5c] text-white hover:opacity-70 transition mt-10"
+              >View All Sushi</a
             >
-              <div
-                class="flex justify-start items-center font-bold text-3xl gap-3"
-              >
-                <img
-                  src="media/profile.png"
-                  alt="profile icon"
-                  class="w-10 aspect-square"
-                />
-                <h3>John B.</h3>
-              </div>
-              <div class="flex justify-start items-center">
-                <p class="italic">
-                  "The location for the shoot was chosen perfectly, with
-                  beautiful landscapes and picturesque backgrounds. The
-                  photographer showed high professionalism, skillfully working
-                  with natural light and finding the most successful angles. He
-                  also created a light and relaxed atmosphere, making everyone
-                  feel comfortable and confident in front of the camera. The
-                  photos turned out to be lively, bright and very natural. I was
-                  completely satisfied with the result and recommend it to
-                  anyone who wants to capture beautiful moments in nature."
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex flex-col border border-white/70 bg-white/90 py-5 px-4 gap-2 text-black"
-            >
-              <div
-                class="flex justify-start items-center font-bold text-3xl gap-3"
-              >
-                <img
-                  src="media/profile.png"
-                  alt="profile icon"
-                  class="w-10 aspect-square"
-                />
-                <h3>Alex R.</h3>
-              </div>
-              <div class="flex justify-start items-center">
-                <p class="italic">
-                  "I recently had the opportunity to take part in a studio
-                  shoot, and it was an amazing experience! The studio turned out
-                  to be incredibly professional: modern equipment, excellent
-                  lighting and thoughtful decorations created ideal conditions
-                  for shooting. The team of specialists worked harmoniously and
-                  professionally, helping at every stage of the process. The
-                  photographer managed to convey all our ideas and ideas by
-                  offering interesting creative solutions. The result exceeded
-                  all expectations — the photos turned out to be stylish,
-                  expressive and of high quality. I will definitely come back
-                  here again and recommend it to anyone who is looking for a
-                  professional studio for filming!"
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex flex-col border border-white/70 bg-white/90 py-5 px-4 gap-2 text-black"
-            >
-              <div
-                class="flex justify-start items-center font-bold text-3xl gap-3"
-              >
-                <img
-                  src="media/profile.png"
-                  alt="profile icon"
-                  class="w-10 aspect-square"
-                />
-                <h3>Shon M.</h3>
-              </div>
-              <div class="flex justify-start items-center">
-                <p class="italic">
-                  "We recently did a shoot for our clothing brand, and it was an
-                  exceptional experience! The team of professionals worked
-                  harmoniously and creatively, ranging from stylists and makeup
-                  artists to photographers and assistants. The location and
-                  studio equipment were chosen perfectly, which allowed us to
-                  fully reveal the uniqueness of our collection. The
-                  photographer easily found a common language with the models,
-                  creating a relaxed and productive atmosphere. As a result, we
-                  got great photos that perfectly convey the style and concept
-                  of our brand. We are very pleased with the cooperation and
-                  look forward to new projects together!"
-                </p>
-              </div>
-            </div>
           </div>
-        </section>
-        <section
-          class="w-full min-h-[75vh] flex flex-col items-center gap-7 p-5 md:p-10 bg-black"
-        >
-          <h2 class="text-4xl md:text-6xl font-black drop-shadow">Sign Up</h2>
-          <form
-            action="thanks_form.php"
-            id="form"
-            action="submit_form.php"
-            method="POST"
-            class="flex flex-col justify-center gap-5 px-4 py-7 border w-full max-w-2xl"
-          >
+        </div>
+      </section>
+
+      <section id="order" class="flex flex-col items-center py-20">
+        <h2 class="text-4xl font-bold text-center mb-10">Order Now</h2>
+        <div class="w-full max-w-3xl">
+          <form class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <input
-              type="name"
-              name="name"
-              id="name"
-              placeholder="Name"
+              type="text"
+              placeholder="Full Name"
+              class="px-4 py-2 rounded-full border border-gray-300"
               required
-              class="border-2 bg-transparent px-2 py-4 focus:outline-none"
             />
             <input
               type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
+              placeholder="Email Address"
+              class="px-4 py-2 rounded-full border border-gray-300"
               required
-              class="border-2 bg-transparent px-2 py-4 focus:outline-none"
+            />
+            <input
+              type="text"
+              placeholder="Delivery Address"
+              class="px-4 py-2 rounded-full border border-gray-300 md:col-span-2"
+              required
             />
             <textarea
-              name="text"
-              id="text"
+              placeholder="Order Details"
+              class="px-4 py-2 rounded-3xl border border-gray-300 md:col-span-2"
               required
-              class="border-2 bg-transparent px-2 py-4 focus:outline-none"
+            ></textarea>
+            <button
+              type="submit"
+              class="px-6 py-3 rounded-full bg-[#ec6e5c] text-white hover:opacity-70 transition md:col-span-2"
             >
-Hello, my name is... I wanna...</textarea
-            >
-            <div
-              class="flex flex-col md:flex-row justify-center items-center gap-5"
-            >
-              <div class="checkbox">
-                <input
-                  type="checkbox"
-                  id="privacyPolicy"
-                  name="privacyPolicy"
-                  required
-                />
-                <label for="privacyPolicy"
-                  >I accept the
-                  <a href="privacy-policy.html"><u>Privacy Policy</u></a></label
-                >
-              </div>
-              <button
-                type="submit"
-                class="w-fit border-2 bg-transparent mt-2 px-5 py-4 hover:bg-white/90 hover:text-black transition cursor-pointer"
-              >
-                Sign Up
-              </button>
-            </div>
+              Place Order
+            </button>
           </form>
-        </section>
-      </main>
-      <footer
-        class="w-full min-h-[30vh] flex flex-col md:flex-row justify-between md:justify-end items-center md:items-end gap-5 p-5 md:p-10 bg-[url('media/footer.webp')] bg-contain bg-left bg-no-repeat"
-      >
-        <div class="flex flex-col items-end justify-end gap-5">
-          <h2 class="text-4xl md:text-6xl font-black drop-shadow">MediaZone</h2>
-          <div class="flex gap-5 justify-end">
-            <a href="tel:+918749145208" class="hover:opacity-70"
-              >+918749145208</a
-            >
-            <a href="mailto:mediazone@gmail.com" class="hover:opacity-70"
-              >mediazone@gmail.com</a
-            >
-          </div>
-          <div class="flex gap-5 justify-end">
-            <a href="privacy-policy.html" class="hover:opacity-70"
-              >Privacy Policy</a
-            >
-            <a href="terms-conditions.html" class="hover:opacity-70"
-              >Terms Conditions</a
-            >
-          </div>
-          <div class="flex flex-col items-end justify-between">
-            <p class="text-end">
-              <a
-                href="https://maps.app.goo.gl/Pd54TjcmDcBLeXf77"
-                target="_blank"
-                >D2/309-312, Pandara Rd, Flats, India Gate, New Delhi, Delhi
-                110003</a
-              >
-            </p>
-            <p class="text-end">&copy; 2024 MEDIAZONE. All rights reserved.</p>
-          </div>
         </div>
-      </footer>
-    </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#333] text-white py-10">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 DUDU - Pizza & Sushi. All Rights Reserved.</p>
+        <div class="flex justify-center mt-5">
+          <a href="#" class="mx-2 text-white/90 hover:text-white transition"
+            >Privacy Policy</a
+          >
+          <a href="#" class="mx-2 text-white/90 hover:text-white transition"
+            >Terms of Service</a
+          >
+          <a href="#" class="mx-2 text-white/90 hover:text-white transition"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll("section");
+
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("opacity-100", "translate-y-0");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          }
+        );
+
+        sections.forEach((section) => {
+          section.classList.add("translate-y-10");
+          observer.observe(section);
+        });
+      });
+    </script>
   </body>
 </html>
