@@ -25,9 +25,3 @@ body {
 .animate-bounce-my {
   animation: bounce-my 1.5s infinite;
 }
-
-section {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
