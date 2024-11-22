@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const updateMask = () => {
     const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d", { alpha: false });
+    const ctx = canvas.getContext("2d", { alpha: true });
 
     const dpr = window.devicePixelRatio || 1;
     const width = window.innerWidth;
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     validMasks.forEach((mask) => {
       const rect = mask.getBoundingClientRect();
       const gradient = ctx.createLinearGradient(rect.left, 0, rect.right, 0);
-      gradient.addColorStop(1, "white");
+      gradient.addColorStop(0, "white");
       gradient.addColorStop(1, "white");
 
       ctx.fillStyle = gradient;
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(() => {
       overlay.style.setProperty(
         "--mask-image",
-        `url(${canvas.toDataURL("image/png", 0.8)})`
+        `url(${canvas.toDataURL("image/png", 1)})`
       );
     });
   };
